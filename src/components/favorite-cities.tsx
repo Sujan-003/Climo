@@ -93,7 +93,7 @@ export const FavoriteCities = () => {
     <>
       <h1 className="text-xl font-bold tracking-tight">Favorites</h1>
       <ScrollArea className="w-full pb-4">
-        <div className="flex mt-2 gap-4">
+        <div className="flex mt-2 gap-4 overflow-x-auto no-scrollbar scroll-smooth">
           {favorites.map((city) => (
             <FavoriteCityTablet
               key={city.id}
